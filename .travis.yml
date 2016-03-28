@@ -1,6 +1,10 @@
+cache: bundler
 language: ruby
-script: rake ci
+install:
+  - bundle install --retry=3
+script:
+  - bundle exec rake
 rvm:
-  - 2.1.2
-  - 2.2.0
-  - 2.3.0
+  - 2.1
+  - 2.2
+  - 2.3
