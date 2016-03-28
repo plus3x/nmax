@@ -16,6 +16,5 @@ describe NMax do
   end
 
   describe 'calculation' do
-
   end
 end
