@@ -1,3 +1,36 @@
+[![Build Status](https://secure.travis-ci.org/plus3x/nmax.png?branch=master)](http://travis-ci.org/plus3x/nmax)
+
+# NMax #
+
+## Installation ##
+
+```
+~ $ gem install nmax
+```
+
+## Usage ##
+
+```
+~ $ nmax --help
+Usage:
+    nmax [N] [OPTIONS]
+
+Options
+    -n, --n [n]                      Count of biggest numbers
+    -f, --file [file]                Input file
+    -v, --version                    Show version
+    -h, --help                       Show this help
+```
+
+```
+~ $ cat sample_data_40GB.txt | nmax 10000
+1242315355154252146241642
+152451425254542541542512
+1545421542542151425214
+4324324235545245242
+...
+```
+
 ## Техническое задание ##
 
 ### Напишите скрипт nmax, который делает следующее: ###
@@ -12,7 +45,7 @@
 + код должен быть оформлен в виде гема (содержащего исполняемый файл, код модулей и т.д.);
 + плюсом является размещение на Github и интеграция с Travis CI.
 
-Пример запуска:
-```shell
+### Пример запуска: ###
+```
   $ cat sample_data_40GB.txt | nmax 10000
 ```
