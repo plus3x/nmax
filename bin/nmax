@@ -7,7 +7,7 @@ require 'nmax'
 options = {}
 
 OptionParser.new do |opt|
-  opt.banner  = "Usage:\n    nmax [N] [OPTIONS]"
+  opt.banner = "Usage:\n    nmax [N] [OPTIONS]"
   opt.separator "\nOptions"
 
   opt.on('-n', '--n [n]', Integer, 'Count of biggest numbers') do |n|

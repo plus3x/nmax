@@ -1,0 +1,25 @@
+# inherit_from: .rubocop_todo.yml
+
+AllCops:
+  TargetRubyVersion: 2.3
+
+Documentation:
+  Enabled: false
+
+# Style/AutoResourceCleanup:
+#   Enabled: true
+
+# Style/CollectionMethods:
+#   Enabled: true
+
+# Style/MutableConstant:
+#   Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: true
