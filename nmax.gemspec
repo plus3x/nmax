@@ -4,7 +4,7 @@ Gem::Specification.new 'nmax', NMax::VERSION do |s|
   s.homepage    = 'http://rubygems.org/gems/nmax'
   s.date        = '2016-03-28'
   s.summary     = 'NMax'
-  s.description = 'NMax'
+  s.description = 'NMax print max numbers from huge enterence input'
   s.author      = 'Vladislav Petrov'
   s.email       = 'electronicchest@gmail.com'
   s.license     = 'MIT'
