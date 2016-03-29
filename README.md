@@ -11,18 +11,6 @@
 ## Usage ##
 
 ```
-~ $ nmax --help
-Usage:
-    nmax [N] [OPTIONS]
-
-Options
-    -n, --n [n]                      Count of biggest numbers
-    -f, --file [file]                Input file
-    -v, --version                    Show version
-    -h, --help                       Show this help
-```
-
-```
 ~ $ cat sample_data_40GB.txt | nmax 10000
 1242315355154252146241642
 152451425254542541542512
