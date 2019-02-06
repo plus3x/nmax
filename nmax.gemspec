@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './lib/nmax/version'
 
 Gem::Specification.new 'nmax', NMax::VERSION do |s|
@@ -10,8 +12,6 @@ Gem::Specification.new 'nmax', NMax::VERSION do |s|
   s.license     = 'MIT'
   s.platform    = Gem::Platform::RUBY
   s.post_install_message = 'Thanks for installing!'
-
-  s.required_ruby_version = '>= 2.2'
 
   s.files         = `git ls-files`.split
   s.test_files    = `git ls-files -- {test,spec,features}`.split
