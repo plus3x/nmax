@@ -23,12 +23,13 @@ module NMax
       numbers.sort.last(count)
     end
 
+    # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
     def faster(stdin:, count:)
-      number_str = String.new
+      number_str = String.new # rubocop:disable Performance/UnfreezeString
       numbers = []
 
       stdin.each_char do |c|
-        if c =~ /\d/
+        if c =~ /\d/ # rubocop:disable Performance/RegexpMatch
           number_str << c
         elsif !number_str.empty?
           numbers << number_str.to_i
@@ -41,5 +42,6 @@ module NMax
 
       numbers.sort.last(count)
     end
+    # rubocop:enable Metrics/AbcSize,Metrics/MethodLength
   end
 end

@@ -3,6 +3,7 @@
 require_relative 'test_helper'
 require 'tempfile'
 
+# rubocop:disable Metrics/BlockLength
 describe NMax do
   it 'should get 2 max numbers from readed file' do
     assert_equal `cat #{Bundler.root}/test/fixtures/text_with_numbers.txt | #{Bundler.root}/bin/nmax 2}`, "22\n30\n"
@@ -19,7 +20,7 @@ describe NMax do
 
     starting_memory = memstats
 
-    yield(file, count = 5)
+    yield(file, 5)
 
     consumed_memory = memstats - starting_memory
 
@@ -64,3 +65,4 @@ describe NMax do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
